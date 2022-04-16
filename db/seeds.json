@@ -1,0 +1,95 @@
+[
+    {   
+    "entry": {
+        "activity": {
+            "social": true,
+            "meditation": false,
+            "exercise": true,
+            "rest": true,
+            "yoga": false,
+            "dance": true
+        },
+        "sleep": {
+            "great": true,
+            "okay": false,
+            "poor": false
+        },
+        "hydration": {
+            "great": false,
+            "okay": false,
+            "poor": true
+        },
+        "supplements": false,
+        "mood": {
+            "energized": true,
+            "happy": true,
+            "meh": false,
+            "sad": false,
+            "anxious": false,
+            "stressed": false
+        },
+        "thoughts": null
+    }},
+    {   
+        "entry": {
+            "activity": {
+                "social": false,
+                "meditation": false,
+                "exercise": false,
+                "rest": true,
+                "yoga": false,
+                "dance": true
+            },
+            "sleep": {
+                "great": false,
+                "okay": true,
+                "poor": false
+            },
+            "hydration": {
+                "great": false,
+                "okay": true,
+                "poor": false
+            },
+            "supplements": false,
+            "mood": {
+                "energized": true,
+                "happy": true,
+                "meh": false,
+                "sad": false,
+                "anxious": false,
+                "stressed": false
+            },
+            "thoughts": null
+        }},
+        {   
+            "entry": {
+                "activity": {
+                    "social": false,
+                    "meditation": false,
+                    "exercise": true,
+                    "rest": true,
+                    "yoga": true,
+                    "dance": true
+                },
+                "sleep": {
+                    "great": true,
+                    "okay": true,
+                    "poor": false
+                },
+                "hydration": {
+                    "great": false,
+                    "okay": false,
+                    "poor": true
+                },
+                "supplements": false,
+                "mood": {
+                    "energized": true,
+                    "happy": true,
+                    "meh": false,
+                    "sad": false,
+                    "anxious": false,
+                    "stressed": false
+                },
+                "thoughts": null
+            }}
+    ]

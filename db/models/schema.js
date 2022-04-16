@@ -1,11 +1,8 @@
-const mongoose = require('mongoose')
+const mongoose = require('../connection')
 
 const habitsSchema = new mongoose.Schema(
 {   
-user: {
-    date: {type: Date,
-    required: true
-    },
+entry: {
     activity: {
         social: Boolean,
         meditation: Boolean,

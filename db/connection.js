@@ -3,7 +3,7 @@ const mongoose = require("mongoose")
 const mongoURI = 
     process.env.NODE_ENV === 'production'
         ? process.env.DEV_DB_URL
-        : `mongodb://localhost:27017/express-mvc`
+        : `mongodb://localhost:27017/gyst-app`
 
 mongoose
     .connect(mongoURI)
