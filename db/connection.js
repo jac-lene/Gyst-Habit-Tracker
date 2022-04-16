@@ -1,15 +1,9 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
-const mongoURI = 
-    process.env.NODE_ENV === 'production'
-        ? process.env.DEV_DB_URL
-        : `mongodb://localhost:27017/gyst-app`
+const connectionString =
+    "mongodb+srv://jacleneMongo:jaclene@cluster0.eho91.mongodb.net/gystApp?retryWrites=true&w=majority";
 
-mongoose
-    .connect(mongoURI)
-    .then( (instance) => 
-        console.log(`Connected to db: ${instance.connections[0].name}`)
-    )
-    .catch( (err) => console.log(`Connection to db failed due to: ${err}`))
+mongoose.connect(connectionString)
+ 
 
-module.exports = mongoose
+module.exports = mongoose;
