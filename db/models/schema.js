@@ -3,6 +3,7 @@ const mongoose = require('../connection')
 const habitsSchema = new mongoose.Schema(
 {   
 entry: {
+    date: Date,
     activity: {
         social: Boolean,
         meditation: Boolean,

@@ -1,6 +1,7 @@
 [
     {   
     "entry": {
+        "date": "2022-04-29",
         "activity": {
             "social": true,
             "meditation": false,
@@ -32,6 +33,7 @@
     }},
     {   
         "entry": {
+            "date": "2022-04-30",
             "activity": {
                 "social": false,
                 "meditation": false,
@@ -63,6 +65,7 @@
         }},
         {   
             "entry": {
+                "date": "2022-05-01",
                 "activity": {
                     "social": false,
                     "meditation": false,

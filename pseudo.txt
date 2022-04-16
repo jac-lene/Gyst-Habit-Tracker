@@ -2,5 +2,22 @@ SETUP
     -Create express app index
     -Connections
     -Seed some data
+    -Create CRUD
+    -create attribute page
+
+FORM LOGIC
+    -configure forms
+    -try to route to forms with buttons
+    -see if you can send data from button to json through the back end
+
+FRONT END
+    -Get views set up
+    -NEED: layout, index, new entry, view entry, edit entry w delete button, sub selections
+
+MAIN PAGE/INDEX 
+    -block out entries
+    -direct form data to "entry" divs
+    -try to get date included
+    -import icons
 
 
