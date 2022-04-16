@@ -1,8 +1,6 @@
-User {
-   name: 
-   movemnt: {yoga: Boolean, meditation: Boolean}
-   Sleep
-   nutrition:
-   etc....
-}
+SETUP 
+    -Create express app index
+    -Connections
+    -Seed some data
+
 
