@@ -1,0 +1,8 @@
+User {
+   name: 
+   movemnt: {yoga: Boolean, meditation: Boolean}
+   Sleep
+   nutrition:
+   etc....
+}
+
