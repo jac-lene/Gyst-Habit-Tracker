@@ -3,8 +3,10 @@
     <h3><%=habits[0].date %></h3>
     <h3><%= habits[0].activity[0].category %></h3>
     <h4><%= habits[0].activity[0].name%>, <%= habits[0].activity[1].name%> </h4>
+    <img src="<%=habits[0].activity[0].img %>" width="50px" /><img src="<%=habits[0].activity[1].img %>" width="50px" />
     <h3><%= habits[0].mood.category %> </h3> 
     <h4><%= habits[0].mood.name%></h4>
     <h3><%= habits[0].thoughts.category %></h3>
+    <img src="<%= habits[0].thoughts.img %>" width="50px" />
     <h4><%= habits[0].thoughts.content%></h4>
 </div>
