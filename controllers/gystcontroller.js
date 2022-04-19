@@ -1,13 +1,13 @@
 const express = require("express")
 const router = express.Router()
-const Habits = require('../db/models/schema')
+const Habits = require('../db/models/masterschema')
 
 
 router.get('/', (req, res) => {
     console.log('here')
     const results = Habits.find({})
     results.then((habits) => {
-        res.send(habits)
+        res.render('home', { habits: habits})
     })
 })
 

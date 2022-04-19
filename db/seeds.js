@@ -1,4 +1,4 @@
-const Habits = require('./models/schema')
+const Habits = require('./models/masterschema')
 
 const seedData = require('./seeds.json')
 

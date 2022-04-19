@@ -1,98 +1,57 @@
 [
-    {   
-    "entry": {
-        "date": "2022-04-29",
-        "activity": {
-            "social": true,
-            "meditation": false,
-            "exercise": true,
-            "rest": true,
-            "yoga": false,
-            "dance": true
-        },
-        "sleep": {
-            "great": true,
-            "okay": false,
-            "poor": false
-        },
-        "hydration": {
-            "great": false,
-            "okay": false,
-            "poor": true
-        },
-        "supplements": false,
+    {
+        "date": "2022-04-21",
+        "activity": [ {
+            "category": "activity",
+            "name": "social",
+            "img": "https://cdn-icons-png.flaticon.com/512/1441/1441158.png"}, {
+            "category": "activity",
+            "name": "yoga",
+            "img": "https://cdn-icons-png.flaticon.com/512/84/84081.png"} ],
         "mood": {
-            "energized": true,
-            "happy": true,
-            "meh": false,
-            "sad": false,
-            "anxious": false,
-            "stressed": false
-        },
-        "thoughts": "im stressed out making this app"
-    }},
-    {   
-        "entry": {
-            "date": "2022-04-30",
-            "activity": {
-                "social": false,
-                "meditation": false,
-                "exercise": false,
-                "rest": true,
-                "yoga": false,
-                "dance": true
-            },
-            "sleep": {
-                "great": false,
-                "okay": true,
-                "poor": false
-            },
-            "hydration": {
-                "great": false,
-                "okay": true,
-                "poor": false
-            },
-            "supplements": false,
-            "mood": {
-                "energized": true,
-                "happy": true,
-                "meh": false,
-                "sad": false,
-                "anxious": false,
-                "stressed": false
-            },
-            "thoughts": null
-        }},
-        {   
-            "entry": {
-                "date": "2022-05-01",
-                "activity": {
-                    "social": false,
-                    "meditation": false,
-                    "exercise": true,
-                    "rest": true,
-                    "yoga": true,
-                    "dance": true
-                },
-                "sleep": {
-                    "great": true,
-                    "okay": true,
-                    "poor": false
-                },
-                "hydration": {
-                    "great": false,
-                    "okay": false,
-                    "poor": true
-                },
-                "supplements": false,
-                "mood": {
-                    "energized": true,
-                    "happy": true,
-                    "meh": false,
-                    "sad": false,
-                    "anxious": false,
-                    "stressed": false
-                },
-                "thoughts": null
-            }}
-    ]
+            "category": "mood",
+            "name": "good",
+            "img": "https://cdn-icons.flaticon.com/png/512/2024/premium/2024041.png?token=exp=1650330824~hmac=6c747b2a373d3ca8c41bbc4311da8524"},
+        "thoughts": {
+            "category": "thoughts",
+            "content": "A Diary is like our partner who keeps all the secrets and our never told stories. The words written in your personal diary reflects your real thoughts and feelings. A Diary is where you keep your personal musings about your real life, partner, family, or friends. If you're thinking of starting a diary writing, then the first question that comes in your mind is how to write a diary? It's not that hard, but it has a process and way to write it. Let`s move further to discuss how to do diary writing?",
+            "img": "https://cdn-icons.flaticon.com/png/512/3971/premium/3971397.png?token=exp=1650331041~hmac=310629474f6527d692d7959cd4ffacb4"
+        }
+    },
+    {
+        "date": "2022-04-22",
+        "activity": [ {
+            "category": "activity",
+            "name": "dance",
+            "img": "https://cdn-icons-png.flaticon.com/512/10/10580.png"}],
+        "mood": {
+            "category": "mood",
+            "name": "okay",
+            "img": "String"},
+        "thoughts": {
+            "category": "thoughts",
+            "content": "bad day today",
+            "img": "https://cdn-icons.flaticon.com/png/512/3971/premium/3971397.png?token=exp=1650331041~hmac=310629474f6527d692d7959cd4ffacb4"
+        }
+    },
+    {
+        "date": "2022-04-23",
+        "activity": [ {
+            "category": "activity",
+            "name": "social",
+            "img": "https://cdn-icons-png.flaticon.com/512/1441/1441158.png"}, {
+            "category": "activity",
+            "name": "yoga",
+            "img": "https://cdn-icons-png.flaticon.com/512/84/84081.png"} ],
+        "mood": {
+            "category": "mood",
+            "name": "String",
+            "img": "String"},
+        "thoughts": {
+            "category": "thoughts",
+            "content": "bleh",
+            "img": "https://cdn-icons.flaticon.com/png/512/3971/premium/3971397.png?token=exp=1650331041~hmac=310629474f6527d692d7959cd4ffacb4"
+        }
+    }
+
+]
