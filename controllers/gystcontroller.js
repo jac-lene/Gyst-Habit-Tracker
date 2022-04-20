@@ -11,9 +11,22 @@ router.get('/', (req, res) => {
     })
 })
 
-// router.get('/new', (req, res) => {
-//     res.render('todos/new')
-// })
+// router.get('/', async (req, res, next) => {
+//     try {
+//         console.log('here')
+//         const results = await Habits.find({})
+//         const context = { results }
+//         return res.render('home', context);
+//     } catch (error) {
+//         console.log(error);
+//         req.error = error;
+//         return next();
+//     }
+// });
+
+router.get('/add', (req, res) => {
+    res.render('new')
+});
 
 router.get('/:id/edit', (req, res) => {
     const id = req.params.id
@@ -51,7 +64,7 @@ router.put("/:id", (req, res) => {
 router.get('/:id', (req, res) => {
     Habits.findById(req.params.id)
         .then( (habit) =>
-            res.send(habit)
+            res.render('show', {habit: habit})
         )
 })
 

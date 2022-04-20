@@ -5,19 +5,45 @@ SETUP
     -Create CRUD
     -create attribute page
 
+BACK END
+    -figure out how to get "creation date" element
+
 FORM LOGIC
-    -configure forms
-    -try to route to forms with buttons
+    -configure forms as basic data creation
+    -get home page to update with new entries
+    -route to forms with buttons
+STRETCH ---
     -see if you can send data from button to json through the back end
 
 FRONT END
     -Get views set up
-    -NEED: layout, index, new entry, view entry, edit entry w delete button, sub selections
+    -NEED: layout, home, new entry, view entry, edit entry w delete button, sub selections
+    -how to use javascript for click events??
+    -Create headers, maybe partials
 
-MAIN PAGE/INDEX 
+MAIN PAGE/HOME
     -block out entries
-    -direct form data to "entry" divs
-    -try to get date included
-    -import icons
+    -get flexbox functioning, use as basis for other pages
+    -create FOR LOOP to show data for home page
+    -add "create entry" button
+
+NEW ENTRY PAGE
+    -Build basic form using checkboxes and radio buttons
+    -include cancel and submit buttons
+
+SHOW/DETAILS PAGE   
+    -shows one entry
+    -block out layout for expanded information
+    -include edit button
+
+EDIT PAGE
+    -Build basic form again
+    -use skeleton from NEW ENTRY but fill with current information
+    -include DELETE ENTRY button, redirects to home
+
+ATTRIBUTIONS PAGE 
+    -include link in FOOTER
+    -attribute all icons
+
 
 

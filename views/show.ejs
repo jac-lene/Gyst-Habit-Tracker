@@ -1,0 +1,18 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<h1><%=habit.date %></h1>
+<div class="singleentry">
+    <h3><%=habit.date %></h3>
+    <h3><%= habit.activity[0].category %></h3>
+    <h4><%= habit.activity[0].name%>, <%= habit.activity[1].name%> </h4>
+    <div class=""><img src="<%=habit.activity[0].img %>" width="50px" /><img src="<%=habit.activity[1].img %>" width="50px" /><img src="<%= habit.thoughts.img %>" width="50px" /></div>
+    <h3><%= habit.mood.category %> </h3> 
+    <h4><%= habit.mood.name%></h4>
+    <h3><%= habit.thoughts.category %></h3>
+    
+    <h4><%= habit.thoughts.content%></h4>
+</div>
+
+<div class="buttonContainer">
+    <a class="backbtn" href="/">back</a>
+</div>

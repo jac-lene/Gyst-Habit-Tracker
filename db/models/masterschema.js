@@ -3,9 +3,7 @@ const mongoose = require('../connection')
 const habitsSchema = new mongoose.Schema({
     date: String,
     activity: [ {
-        category: String,
-        name: String,
-        img: String} ]
+        name: String} ]
         // social: Boolean,
         // meditation: Boolean,
         // exercise: Boolean,
@@ -14,9 +12,7 @@ const habitsSchema = new mongoose.Schema({
         // dance: Boolean
     ,
     mood: {
-        category: String,
-        name: String,
-        img: String
+        name: String
         // energized: Boolean,
         // happy: Boolean,
         // meh: Boolean,
@@ -25,9 +21,7 @@ const habitsSchema = new mongoose.Schema({
         // stressed: Boolean
     },
     thoughts: {
-        category: String,
         content: String,
-        img: String,
     }
 })
     
