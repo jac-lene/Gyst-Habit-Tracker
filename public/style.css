@@ -4,11 +4,14 @@ body {
 
 .entry {
     width: 300px;
-    height: 60px;
     border: 2px solid black;
     border-radius: 5px;
     background-color: #FFFFFF;
     margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .singleentry {
@@ -20,11 +23,21 @@ body {
     margin: 0 auto;
 }
 
-.date {
+.form {
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+/* .date {
     text-align: left;
     position: relative;
     left:10px;
-}
+} */
 
 .icons {
     display: flex;
@@ -36,10 +49,31 @@ body {
 }
 
 .addbtn {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: 2px solid black;
     border-radius: 100%;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.backbtn {
+    width: 60px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.backbutt {
+    position: absolute;
+    left: 540px;
+}
+
+.addbutt {
+    position: absolute;
+    left: 540px;
 }
 
 .buttoncontainer {
@@ -47,4 +81,9 @@ body {
     height: 30px;
     border: 2px solid black;
     background-color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

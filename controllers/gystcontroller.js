@@ -62,9 +62,10 @@ router.put("/:id", (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-    Habits.findById(req.params.id)
+    Habits.findOne(
+        { _id: req.params.id } )
         .then( (habit) =>
-            res.render('show', {habit: habit})
+            res.render('show', { habit: habit })
         )
 })
 
