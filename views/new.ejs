@@ -1,13 +1,22 @@
-<link rel="stylesheet" type="text/css" href="style.css">
+<%- include('../partials/head.ejs') %>
 
-<h1>New Entry</h1>
+<div class="color">
+    <div class="header">
+        <a href="/"><img src="../imgs/Navigation/left-arrow.png" /></a>
+    </div>
+    <h1 class="gyst">New Entry</h1>
+    <div class="spacer"></div>
+</div>
+
 <div class="newentry">
     <form class="entryForm" action="/" method="POST">
 
+       
 
 <div class="form">
+
 <p>Activity</p>
-<input type="checkbox" id="activity" name="activity" value="social">
+<input type="checkbox" id="social" name="name" value="social">
 <label for="social">Social</label><br>
 <!-- <input type="checkbox" id="yoga" name="activity" value="yoga">
 <label for="activity">Yoga</label><br>
@@ -34,11 +43,9 @@
 
 <div class="form">
 <p>Thoughts</p>
-<textarea name="thoughts" form="content">Enter text here...</textarea>
+<textarea name="thoughts" form="thoughts">Enter text here...</textarea>
 <input type="submit">
     </form>
 </div>
 
 </div>
-
-<div class="backbutt"><a href="/"><button class="backbtn">back</button></a></div>

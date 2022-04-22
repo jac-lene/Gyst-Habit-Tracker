@@ -7,7 +7,6 @@ const habitsSchema = new mongoose.Schema({
         default: null},
     activity: {
         type: [activitySchema],
-        default: undefined
     }
         // social: Boolean,
         // meditation: Boolean,

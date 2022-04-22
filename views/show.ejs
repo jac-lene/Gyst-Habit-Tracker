@@ -1,7 +1,13 @@
-<link rel="stylesheet" type="text/css" href="style.css">
+<%- include('../partials/head.ejs') %>
+<div class="color">
+    <div class="header">
+        <a href="/"><img src="../imgs/Navigation/left-arrow.png" /></a>
+    </div>
+    <div class="header"><h1 class="show"><%= habit.date %></h1></div>
+    <div class="header"><img src="../imgs/Navigation/draw.png" /></div>
+</div>
 
-<h1><%= habit.date %></h1>
-<div class="body">
+<div class="singleentry">
             <div class="details">
                     <% habit.activity.forEach(act => { %>
                         <%= act.name %>
@@ -12,5 +18,12 @@
                     <%= habit.thoughts %>
                     <br><br>
             </div>
-<div class="backbutt"><a href="/"><button class="backbtn">back</button></a></div>
+
 </div>
+
+
+<!-- <div class="deletebutt"><a href="/?_method=DELETE"><button class="delbtn">delete</button></a></div> -->
+<form class="deletebutt" action="/<%=habit._id%>?_method=DELETE">
+    <input
+        type="submit">
+</form>

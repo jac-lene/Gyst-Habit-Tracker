@@ -1,6 +1,12 @@
-<link rel="stylesheet" type="text/css" href="style.css">
+<%- include('../partials/head.ejs') %>
 
-<h1>Entries</h1>
+
+<div class="color">
+    <p class="gyst">GYST habit tracker</p>
+</div>
+
+
+
 <div class="body">
     <% habits.forEach(entry => { %> 
         <a href="/<%= entry._id %>"><div class="entry"> 

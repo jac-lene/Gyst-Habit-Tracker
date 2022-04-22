@@ -1,6 +1,6 @@
 [
     {
-        "date": "April 20th, 2022",
+        "date": "Saturday, April 20",
         "activity": [ 
             {"name": "social"}, 
             {"name": "yoga"} ],
@@ -8,14 +8,14 @@
         "thoughts": "diary entry hello"
     },
     {
-        "date": "2022-04-22",
+        "date": "Friday, April 19",
         "activity": [ {
             "name": "dance"}],
         "mood": "okay",
         "thoughts": "bad day today"
     },
     {
-        "date": "2022-04-23",
+        "date": "Thursday, April 18",
         "activity": [ {
             "name": "social"}, {
             "name": "yoga"} ],

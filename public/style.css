@@ -1,9 +1,47 @@
 body {
     background-color: #CCCCCC;
+    margin: 0 auto;
+}
+
+.color {
+    background-color: #303535;
+    border-bottom: 3px solid black;
+    height: 70px;
+    width: 393px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    margin: 0 20px 0 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.spacer {
+    margin: 0 20px 0 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.gyst {
+    font-family: 'Prata', serif;
+    font-size: 35px;
+    margin: 0 auto;
+}
+
+.show {
+    font-family: 'Prata', serif;
+    font-size: 25px;
 }
 
 .entry {
-    width: 300px;
+    width: 350px;
     border: 2px solid black;
     border-radius: 5px;
     background-color: #FFFFFF;
@@ -12,10 +50,12 @@ body {
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    font-family: 'Prata', serif;
+    font-size: 16px;
 }
 
 .singleentry {
-    width: 300px;
+    width: 350px;
     /* height: 500px; */
     border: 2px solid black;
     border-radius: 5px;
@@ -24,7 +64,7 @@ body {
 }
 
 .form {
-    width: 300px;
+    width: 350px;
     border: 2px solid black;
     border-radius: 5px;
     background-color: #FFFFFF;
@@ -49,12 +89,14 @@ body {
 }
 
 .addbtn {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border: 2px solid black;
     border-radius: 100%;
+    background-color: #303535;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 40px;
+    color: white;
 }
 
 .backbtn {
@@ -62,18 +104,38 @@ body {
     height: 40px;
     border: 2px solid black;
     border-radius: 100%;
+    background-color: #303535;
     cursor: pointer;
     font-size: 20px;
+    color: white;
+}
+
+.delbtn {
+    width: 60px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-color: #303535;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
 }
 
 .backbutt {
-    position: absolute;
-    left: 540px;
+    position: relative;
+    left: 320px;
+}
+
+.deletebutt {
+    position: relative;
+    left: 280px;
 }
 
 .addbutt {
-    position: absolute;
-    left: 540px;
+    position: relative;
+    left: 330px;
+    /* top: 415px; */
+    bottom: -10px;
 }
 
 .buttoncontainer {
