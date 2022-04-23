@@ -2,23 +2,30 @@
 
 
 <div class="color">
+    <!-- <div class="spacer"></div> -->
     <p class="gyst">GYST habit tracker</p>
+    <div class="header">
+        <a href="/"><img src="https://i.imgur.com/tOY5a6k.png" /></a>
+    </div> 
 </div>
 
 
 
 <div class="body">
     <% habits.forEach(entry => { %> 
-        <a href="/<%= entry._id %>"><div class="entry"> 
+        <a href="/<%= entry._id %>">
+            <div class="entry"> 
             <div class="date">
                 <h3> 
-                    <%= entry.date %> 
+                    <% const options1 = { weekday: 'long'} %>
+                    <% const options2 = {year: 'numeric', month: 'long', day: 'numeric' } %>
+                    <%= new Date(entry.createdAt).toLocaleDateString('en-US', options1) %>, <br>
+                    <%= new Date(entry.createdAt).toLocaleDateString('en-US', options2) %>
+                    
                 </h3>
             </div>
             <div class="details">
-                    <% entry.activity.forEach(act => { %>
-                        <%= act.name %>
-                    <% }) %>
+                    <%= entry.activity %>
                     <br>
                     <%= entry.mood %> 
                     <br> 

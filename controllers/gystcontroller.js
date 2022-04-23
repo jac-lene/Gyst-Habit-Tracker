@@ -29,18 +29,18 @@ router.get('/add', (req, res) => {
     res.render('new')
 });
 
-router.get('/:id/edit', (req, res) => {
+router.get('/edit/:id', (req, res) => {
     const id = req.params.id
     Habits.findById(id)
         .then(habit => {
-            res.redirect('/')
+            res.render('edit', {habit: habit})
         })
         .catch(console.error)
 })
 
 router.post('/', (req, res) => {
     // res.send('received!')
-    // console.log('in post')
+    console.log(req.body)
     Habits.create(req.body)
         .then(() => {
             res.redirect('/')

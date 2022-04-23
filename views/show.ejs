@@ -1,17 +1,22 @@
 <%- include('../partials/head.ejs') %>
 <div class="color">
     <div class="header">
-        <a href="/"><img src="../imgs/Navigation/left-arrow.png" /></a>
+        <a href="/"><img src="https://i.imgur.com/mefk1CF.png" /></a>
     </div>
-    <div class="header"><h1 class="show"><%= habit.date %></h1></div>
-    <div class="header"><img src="../imgs/Navigation/draw.png" /></div>
+    <div class="header"><h1 class="show">
+        <% const options1 = { weekday: 'long'} %>
+        <% const options2 = {year: 'numeric', month: 'long', day: 'numeric' } %>
+        
+        <%= new Date(habit.createdAt).toLocaleDateString('en-US', options2) %></h1></div>
+    <div class="header"><a href="/<%=habit._id%>/edit"><img src="https://i.imgur.com/1ba6nWl.png" /></a></div>
 </div>
 
 <div class="singleentry">
             <div class="details">
-                    <% habit.activity.forEach(act => { %>
-                        <%= act.name %>
-                    <% }) %>
+                    <!-- < habit.activity.forEach(act => { %>
+                        <= act.name %>
+                    < }) %> -->
+                    <%= habit.activity %>
                     <br>
                     <%= habit.mood %> 
                     <br> 
@@ -21,9 +26,7 @@
 
 </div>
 
-
-<!-- <div class="deletebutt"><a href="/?_method=DELETE"><button class="delbtn">delete</button></a></div> -->
-<form class="deletebutt" action="/<%=habit._id%>?_method=DELETE">
+<form action="/<%= habit._id %>?_method=DELETE" method="POST">
     <input
-        type="submit">
-</form>
+        type="submit" value="delete">
+    </form>

@@ -17,8 +17,12 @@ body {
     align-items: center;
 }
 
+textarea {
+    resize: none;
+}
+
 img {
-    margin: 0 20px 0 20px;
+    margin: 0 20px 0 10px;
     height: 30px;
     width: 30px;
 }
@@ -31,8 +35,9 @@ img {
 
 .gyst {
     font-family: 'Prata', serif;
-    font-size: 35px;
+    font-size: 28px;
     margin: 0 auto;
+    margin-left: 20px;
 }
 
 .show {
@@ -50,6 +55,7 @@ img {
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: 'Prata', serif;
     font-size: 16px;
 }

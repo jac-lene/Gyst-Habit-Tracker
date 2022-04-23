@@ -2,7 +2,7 @@
 
 <div class="color">
     <div class="header">
-        <a href="/"><img src="https://i.imgur.com/mefk1CF.png" /></a>
+        <a href="/<%=habit._id%>"><img src="https://i.imgur.com/mefk1CF.png" /></a>
     </div>
     <h1 class="show">New Entry</h1>
     <div class="spacer"></div>
@@ -16,18 +16,18 @@
 <div class="form">
 
 <p>Activity</p>
-<input type="checkbox" id="social" name="activity" value="social">
+<input type="checkbox" id="social" name="name" value="social">
 <label for="social">Social</label><br>
-<input type="checkbox" id="yoga" name="activity" value="yoga">
-<label for="yoga">Yoga</label><br>
- <input type="checkbox" id="meditation" name="activity" value="meditation">
+<!-- <input type="checkbox" id="yoga" name="activity" value="yoga">
+<label for="activity">Yoga</label><br>
+<input type="checkbox" id="meditation" name="activity" value="meditation">
 <label for="activity">Meditation</label><br>
 <input type="checkbox" id="rest" name="activity" value="rest">
 <label for="activity">Rest</label><br>
 <input type="checkbox" id="exercise" name="activity" value="exercise">
 <label for="activity">Exercise</label><br>
 <input type="checkbox" id="dance" name="activity" value="dance">
-<label for="activity">Dance/Play</label><br>
+<label for="activity">Dance/Play</label><br> -->
 </div>
 
 
@@ -43,9 +43,10 @@
 
 <div class="form">
 <p>Thoughts</p>
-<textarea name="thoughts"></textarea>
+<textarea name="thoughts" form="thoughts">Enter text here...</textarea>
 <input type="submit">
-   
+    </form>
 </div>
-</form>
+
 </div>
+
