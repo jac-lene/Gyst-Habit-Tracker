@@ -1,4 +1,5 @@
-<%- include('../partials/head.ejs') %>
+<%- include ('../partials/head.ejs') %>
+
 <div class="color">
     <div class="header">
         <a href="/"><img src="https://i.imgur.com/mefk1CF.png" /></a>
@@ -6,27 +7,35 @@
     <div class="header"><h1 class="show">
         <% const options1 = { weekday: 'long'} %>
         <% const options2 = {year: 'numeric', month: 'long', day: 'numeric' } %>
-        
         <%= new Date(habit.createdAt).toLocaleDateString('en-US', options2) %></h1></div>
-    <div class="header"><a href="/<%=habit._id%>/edit"><img src="https://i.imgur.com/1ba6nWl.png" /></a></div>
+    <div class="header">
+        <a href="/<%=habit._id%>/edit">
+            <img src="https://i.imgur.com/1ba6nWl.png" />
+        </a>
+    </div>
 </div>
 
 <div class="singleentry">
             <div class="details">
-                    <!-- < habit.activity.forEach(act => { %>
-                        <= act.name %>
-                    < }) %> -->
-                    <%= habit.activity %>
-                    <br>
-                    <%= habit.mood %> 
-                    <br> 
-                    <%= habit.thoughts %>
-                    <br><br>
+                <p>Activity</p>
+                <%= habit.activity %>
             </div>
+                    <br>
+            <div class="details">
+                <p>Mood</p>
+                    <%= habit.mood %> 
+            </div>
+                    <br> 
+            <div class="details">
+                <p>Thoughts</p>
+                    <%= habit.thoughts %>
+            </div>
+                    <br>
+            
 
 </div>
-
+<div class="header">
 <form action="/<%= habit._id %>?_method=DELETE" method="POST">
-    <input
-        type="submit" value="delete">
+    <input class="deletebutt img" type="image" src="https://i.imgur.com/pbQ3ZnR.png" alt="Submit" />
     </form>
+</div>

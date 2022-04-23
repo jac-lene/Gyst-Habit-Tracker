@@ -1,32 +1,31 @@
-<%- include('../partials/head.ejs') %>
+<%- include ('../partials/head.ejs') %>
+
+<form class="entryForm" action="/" method="POST">
 
 <div class="color">
     <div class="header">
         <a href="/"><img src="https://i.imgur.com/mefk1CF.png" /></a>
     </div>
     <h1 class="show">New Entry</h1>
-    <div class="spacer"></div>
+    <div class="header"><input class="img" type="image" src="https://i.imgur.com/eQCh7Eg.png" alt="Submit" /></div>
 </div>
 
 <div class="newentry">
-    <form class="entryForm" action="/" method="POST">
-
-       
-
+   
 <div class="form">
 
 <p>Activity</p>
-<input type="checkbox" id="social" name="activity" value="social">
+<input type="checkbox" id="social" name="activity" value=" social">
 <label for="social">Social</label><br>
-<input type="checkbox" id="yoga" name="activity" value="yoga">
+<input type="checkbox" id="yoga" name="activity" value=" yoga">
 <label for="yoga">Yoga</label><br>
- <input type="checkbox" id="meditation" name="activity" value="meditation">
+ <input type="checkbox" id="meditation" name="activity" value=" meditation">
 <label for="activity">Meditation</label><br>
-<input type="checkbox" id="rest" name="activity" value="rest">
+<input type="checkbox" id="rest" name="activity" value=" rest">
 <label for="activity">Rest</label><br>
-<input type="checkbox" id="exercise" name="activity" value="exercise">
+<input type="checkbox" id="exercise" name="activity" value=" exercise">
 <label for="activity">Exercise</label><br>
-<input type="checkbox" id="dance" name="activity" value="dance">
+<input type="checkbox" id="dance" name="activity" value=" dance/play">
 <label for="activity">Dance/Play</label><br>
 </div>
 
@@ -44,8 +43,9 @@
 <div class="form">
 <p>Thoughts</p>
 <textarea name="thoughts"></textarea>
-<input type="submit">
-   
+<br><br>
+
+</div>
+
 </div>
 </form>
-</div>

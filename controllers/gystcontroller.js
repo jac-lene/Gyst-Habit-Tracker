@@ -29,13 +29,12 @@ router.get('/add', (req, res) => {
     res.render('new')
 });
 
-router.get('/edit/:id', (req, res) => {
-    const id = req.params.id
-    Habits.findById(id)
-        .then(habit => {
-            res.render('edit', {habit: habit})
-        })
-        .catch(console.error)
+router.get('/:id/edit', (req, res) => {
+    Habits.findOne(
+        { _id: req.params.id } )
+        .then( (habit) =>
+            res.render('edit', { habit: habit })
+        )
 })
 
 router.post('/', (req, res) => {
@@ -56,9 +55,10 @@ router.delete('/:id', (req, res) => {
         .catch(console.error)
 })
 
-router.put("/:id", (req, res) => {
-    Habits.findOneAndUpdate({ _id: req.params.id }, req.body).then((habits) =>
-        res.send(habits)
+router.put("/:id/edit", (req, res) => {
+    Habits.findOneAndUpdate({ _id: req.params.id }, req.body).then((habits) => {
+        const id = req.params.id;
+        res.redirect(`/${id}`)}
     );
 });
 
