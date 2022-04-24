@@ -41,6 +41,11 @@ img, .img {
     font-size: 25px;
 }
 
+.entryBody {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .entry {
     width: 350px;
     border: 2px solid black;
