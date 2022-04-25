@@ -2,7 +2,7 @@
 
 <div class="color">
     <div class="header">
-        <a href="/"><img src="https://i.imgur.com/mefk1CF.png" /></a>
+        <a href="/"><img src="https://i.imgur.com/mefk1CF.png" class="img"/></a>
     </div>
     <div class="header"><h1 class="show">
         <% const options1 = { weekday: 'long'} %>
@@ -10,7 +10,7 @@
         <%= new Date(habit.createdAt).toLocaleDateString('en-US', options2) %></h1></div>
     <div class="header">
         <a href="/<%=habit._id%>/edit">
-            <img src="https://i.imgur.com/1ba6nWl.png" />
+            <img src="https://i.imgur.com/1ba6nWl.png" class="img"/>
         </a>
     </div>
 </div>
@@ -35,7 +35,7 @@
 
 </div>
 <div class="header deletebutt" id="delete">
-    <img src="https://i.imgur.com/pbQ3ZnR.png" id="delete"/>
+    <img src="https://i.imgur.com/pbQ3ZnR.png" class="img" id="delete"/>
 </div>
 
 <div class="modal">
@@ -45,11 +45,11 @@
     <div class="btnCont">
     <div class="yes">
         <form action="/<%= habit._id %>?_method=DELETE" method="POST">
-            <input class="img" type="image" src="https://i.imgur.com/eQCh7Eg.png" alt="Submit" />
+            <input class="img" type="image" src="https://i.imgur.com/eQCh7Eg.png" alt="Submit" class="img" />
             </form>
     </div>
     <div class="no">
-        <img src="https://i.imgur.com/pU5a7vb.png" />
+        <img src="https://i.imgur.com/pU5a7vb.png" class="img" />
     </div>
 </div>
 <br>

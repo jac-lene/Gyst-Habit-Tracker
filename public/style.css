@@ -17,7 +17,7 @@ body {
     align-items: center;
 }
 
-img, .img {
+.img {
     margin: 0 20px 0 10px;
     height: 30px;
     width: 30px;
@@ -48,6 +48,7 @@ img, .img {
 
 .entry {
     width: 350px;
+    height: 50px;
     border: 2px solid black;
     border-radius: 5px;
     background-color: #FFFFFF;
@@ -63,16 +64,26 @@ img, .img {
 
 .iconContainer {
     width: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
 }
 
-.icons {
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
+/* .icons {
     display: flex;
     justify-content: right;
     vertical-align: center;
     position: absolute;
     top: 80px;
     left: 770px;
-}
+} */
+
 
 /* .singleentry {
     width: 350px;

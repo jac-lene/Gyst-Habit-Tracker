@@ -4,7 +4,7 @@
     <!-- <div class="spacer"></div> -->
     <p class="gyst">GYST habit tracker</p>
     <div class="header">
-        <a href="/profile/welcome"><img src="https://i.imgur.com/tOY5a6k.png" /></a>
+        <a href="/profile/welcome"><img src="https://i.imgur.com/tOY5a6k.png" class="img"/></a>
     </div> 
 </div>
 
@@ -24,13 +24,28 @@
                 </h3>
             </div>
             <div class="iconContainer">
-                    <%= entry.activity %>
-                    <br>
-                    <%= entry.mood %> 
-                    <br> 
-                    <%= entry.thoughts %>
+                <div >
+                    <img class="actIcon icon" src="" />
+                </div>
+                    <div >
+                        <img class="moodIcon icon" src="" />
+                    </div>
+                    <div >
+                        <img class="thoughtIcon icon" src="" />
+                    </div>
+        </div>
+
+            <div class="invisible">
+                <div class="activity"><%= entry.activity%>
+                </div>
+                    <div class="mood"><%= entry.mood %> 
+                    </div>
+                    <div class="thoughts"><%= entry.thoughts %></div>
             </div>
+            
         </div></a>
     <% }) %>
 </div>
 <div class="addbutt"><a href="/add"><button class="addbtn">+</button></a></div>
+
+<script src="/homeicons.js"></script>
