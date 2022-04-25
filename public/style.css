@@ -176,4 +176,26 @@ p {
     display: none;
 }
 
+.modal {
+    display: none;
+}
+
+.youSure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: 35px;
+    border: 3.5px solid black;
+    border-radius: 5px;
+    background-color: #CCCCCC;
+    padding: 10px;
+    width: 300px;
+}
+
+.btnCont {
+    display: flex;
+    justify-content: space-between;
+}
 

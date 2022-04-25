@@ -34,8 +34,26 @@
             
 
 </div>
-<div class="header">
-<form action="/<%= habit._id %>?_method=DELETE" method="POST">
-    <input class="deletebutt img" type="image" src="https://i.imgur.com/pbQ3ZnR.png" alt="Submit" />
-    </form>
+<div class="header deletebutt" id="delete">
+    <img src="https://i.imgur.com/pbQ3ZnR.png" id="delete"/>
 </div>
+
+<div class="modal">
+<div class="youSure">
+    <div><h1>Delete entry?</h1></div>
+    <br>
+    <div class="btnCont">
+    <div class="yes">
+        <form action="/<%= habit._id %>?_method=DELETE" method="POST">
+            <input class="img" type="image" src="https://i.imgur.com/eQCh7Eg.png" alt="Submit" />
+            </form>
+    </div>
+    <div class="no">
+        <img src="https://i.imgur.com/pU5a7vb.png" />
+    </div>
+</div>
+<br>
+</div>
+</div>
+
+<script src="/showScript.js"></script>
