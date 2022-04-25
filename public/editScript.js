@@ -19,6 +19,8 @@ entryActArr.forEach((enActs) => {
     } 
 })
 
+
+
 //mood
 
 const getMood = document.getElementsByClassName('showMood')

@@ -1,28 +1,30 @@
 const mongoose = require('../connection')
 
+// const actSchema = new mongoose.Schema({
+//     catName: {
+//         type: String,
+//         default: 'Activity'
+//     },
+//     catImg: {
+//         type: String,
+//         default: 'https://i.imgur.com/lwqy3Ee.png'
+//     },
+//     name: [String],
+//     img: String
+// })
+
 const habitsSchema = new mongoose.Schema({
     activity: {
-        type: [String]
-    }
-        // social: Boolean,
-        // meditation: Boolean,
-        // exercise: Boolean,
-        // rest: Boolean,
-        // yoga: Boolean,
-        // dance: Boolean
-    ,
-    mood: {
-        type: String,
+        type: [String],
+        default: []},
+    mood: String,
         // energized: Boolean,
         // happy: Boolean,
         // meh: Boolean,
         // sad: Boolean,
         // anxious: Boolean,
         // stressed: Boolean
-    },
-    thoughts: {
-        type: String,
-    }
+    thoughts: String,
 },
 {
     timestamps: true
