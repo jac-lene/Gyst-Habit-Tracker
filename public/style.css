@@ -64,17 +64,17 @@ body {
 
 .iconContainer {
     width: 150px;
-    /* display: flex; */
-    /* justify-content: flex-end; */
-    /* align-items: center; */
-    /* gap: 6px; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
 }
 
-/* .icon { */
-    /* height: 40px;
+.icon {
+    height: 40px;
     width: 40px;
     z-index: 999;
-} */
+}
 
 /* .icons {
     display: flex;
@@ -211,3 +211,27 @@ p {
     justify-content: space-between;
 }
 
+.actCont {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.detailCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.iconname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showIcon {
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    /* align-items: center; */
+}

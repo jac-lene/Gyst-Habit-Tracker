@@ -17,18 +17,23 @@
 
 <div class="singleentry">
             <div class="details">
-                <p>Activity</p>
-                <p class="showAct"><%= habit.activity %></p>
+                <h1>Activity</h1>
+                <div class="detailCont">
+                <div class="actCont">
+                    <div class="iconname"></div>
+                <div class="showAct invisible"><%= habit.activity %></div>
+                </div>
+            </div>
             </div>
                     <br>
             <div class="details">
-                <p>Mood</p>
-                    <%= habit.mood %> 
+                <h1>Mood</h1>
+                    <div class="showMood"><%= habit.mood %> </div>
             </div>
                     <br> 
             <div class="details">
-                <p>Thoughts</p>
-                    <%= habit.thoughts %>
+                <h1>Thoughts</h1>
+                    <div class="showThought"><%= habit.thoughts %></div>
             </div>
                     <br>
             
