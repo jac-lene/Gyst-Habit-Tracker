@@ -1,0 +1,21 @@
+<%- include ('../../partials/head.ejs') %>
+
+<div class="color">
+    <div class="header">
+        <a href="/"><img src="https://i.imgur.com/mefk1CF.png" /></a>
+    </div>
+    <h1 class="show">Hello, <%=user.firstName%>!</h1>
+    <div class="header">
+        <a href="/<%=user._id%>/edit">
+            <img src="https://i.imgur.com/1ba6nWl.png" />
+        </a>
+    </div>
+</div>
+
+<div class="newentry">
+   
+    <a href="/profile/welcome"><div class="form">
+    <h1>Sign Out</h1>
+    </div></a> 
+
+</div>

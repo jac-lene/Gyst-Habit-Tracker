@@ -56,7 +56,8 @@ router.delete('/:id', (req, res) => {
 })
 
 router.put("/:id/edit", (req, res) => {
-    Habits.findOneAndUpdate({ _id: req.params.id }, req.body).then((habits) => {
+    Habits.findOneAndUpdate({ _id: req.params.id }, req.body).then(() => {
+        console.log(req.body)
         const id = req.params.id;
         res.redirect(`/${id}`)}
     );

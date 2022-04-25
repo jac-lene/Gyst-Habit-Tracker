@@ -99,6 +99,8 @@ textarea {
     resize: none;
     font-family: 'Prata', serif;
     font-size: 10px;
+    height: 100px;
+    width: 340px;
 }
 
 .addbtn {
@@ -170,7 +172,8 @@ p {
     font-size: 12px;
 }
 
-.editForm {
-    background-color: black;
+.invisible {
+    display: none;
 }
+
 

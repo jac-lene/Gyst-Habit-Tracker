@@ -1,5 +1,21 @@
 const mongoose = require('../connection')
 
+const entrySchema = new mongoose.Schema({
+    activity: {
+        type: [String]
+    },
+    mood: {
+        type: String
+    },
+    thoughts: {
+        type: String,
+        default: null
+    }
+},
+{
+    timestamps: true
+})
+
 const userSchema = new mongoose.Schema({
     username: {
         type: String,
@@ -17,23 +33,11 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    entries: {
-        activity: {
-            type: [String]
-        },
-        mood: {
-            type: String
-        },
-        thoughts: {
-            type: String,
-            default: null
-        }
-    }
+    entries: [entrySchema]
 },
 {
     timestamps: true
-}
-)
+})
 
 
 const Users = mongoose.model('Users', userSchema)

@@ -5,11 +5,11 @@ const ejs = require('ejs')
 
 
 router.get('/profile/welcome', (req, res) => {
-    res.render('welcome')
+    res.render('users/welcome')
 })
 
 router.get('/profile/sign-in', (req, res) => {
-        res.render('login')
+        res.render('users/login')
     })
 
 router.get('/profile/login', (req, res) => {
@@ -17,7 +17,7 @@ router.get('/profile/login', (req, res) => {
     const password = req.body.password;
     Users.findOne({username: username, password: password})
     .then((user) => {
-        res.send(user)
+        res.render('users/profile', {user: user})
     })
 })
 
@@ -35,7 +35,7 @@ router.get('/profile/login', (req, res) => {
 // });
 
 router.get('/profile/sign-up', (req, res) => {
-    res.render('signup')
+    res.render('users/signup')
 });
 
 router.get('/profile/:id/edit', (req, res) => {
@@ -51,7 +51,7 @@ router.post('/profile/sign-up', (req, res) => {
     console.log(req.body)
     Users.create(req.body)
         .then((user) => {
-            res.send(user)
+            res.render('users/profile', {user: user})
         })
         .catch(console.error)
 })
@@ -76,7 +76,7 @@ router.get('profile/:id', (req, res) => {
     Users.findOne(
         { _id: req.params.id } )
         .then( (user) =>
-            res.render('profile', { user: user })
+            res.render('users/profile', { user: user })
         )
 })
 

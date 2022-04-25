@@ -1,3 +1,4 @@
+<%- include ('../partials/head.ejs') %>
 
 <form class="editForm" action="/<%=habit._id%>/edit?_method=PUT" method="POST">
 
@@ -17,36 +18,41 @@
 <div class="form">
 
 <p>Activity</p>
-<input type="checkbox" id="social" name="activity" value=" social">
+<input type="checkbox" class="activity" id="social" name="activity" value=" social">
 <label for="social">Social</label><br>
-<input type="checkbox" id="yoga" name="activity" value=" yoga">
+<input type="checkbox" class="activity" id="yoga" name="activity" value=" yoga">
 <label for="activity">Yoga</label><br>
-<input type="checkbox" id="meditation" name="activity" value=" meditation">
+<input type="checkbox" class="activity" id="meditation" name="activity" value=" meditation">
 <label for="activity">Meditation</label><br>
-<input type="checkbox" id="rest" name="activity" value=" rest">
+<input type="checkbox" class="activity" id="rest" name="activity" value=" rest">
 <label for="activity">Rest</label><br>
-<input type="checkbox" id="exercise" name="activity" value=" exercise">
+<input type="checkbox" class="activity" id="exercise" name="activity" value=" exercise">
 <label for="activity">Exercise</label><br>
-<input type="checkbox" id="dance" name="activity" value=" dance/play">
+<input type="checkbox" class="activity" id="dance/play" name="activity" value=" dance/play">
 <label for="activity">Dance/Play</label><br>
 </div>
 
 
 <div class="form">
 <p>Mood</p>
-<input type="radio" id="great" name="mood" value="great">
+<input type="radio" id="great" class="mood" name="mood" value="great">
 <label for="great">Great</label><br>
-<input type="radio" id="okay" name="mood" value="okay">
+<input type="radio" id="okay" class="mood" name="mood" value="okay">
 <label for="okay">Okay</label><br>
-<input type="radio" id="bad" name="mood" value="bad">
+<input type="radio" id="bad" class="mood" name="mood" value="bad">
 <label for="bad">Bad</label><br>
 </div>
 
 <div class="form">
 <p>Thoughts</p>
-<textarea name="thoughts" form="thoughts"></textarea>
+<textarea name="thoughts" class="thoughts"></textarea>
   
 </div>
 </div>
 </form>
 
+<div class="showAct invisible"><%=habit.activity%></div>
+<div class="showMood invisible"><%=habit.mood%></div>
+<div class="showThought invisible"><%=habit.thoughts%></div>
+
+<script src="/script.js"></script>
