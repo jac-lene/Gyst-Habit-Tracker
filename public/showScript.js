@@ -19,7 +19,7 @@ function icon(img, name) {
 actArr.forEach((act) => {
     activityMaster.forEach((activity) => {
 if (act.includes(activity)) {
-    console.log(act)
+    // console.log(act)
     if (act.includes('yoga')) {
         icon('https://i.imgur.com/e1iwlfc.png', 'Yoga')
     } 
@@ -43,9 +43,37 @@ if (act.includes(activity)) {
 )})
 
 
+const mood = document.querySelector('.showMood').innerHTML
+console.log(mood)
+
+function moodicon(img, name) {
+    const imgDiv = document.createElement('div')
+    const nameDiv = document.createElement('div')
+    document.querySelector('.iconmood').appendChild(imgDiv)
+    document.querySelector('.iconmood').appendChild(nameDiv)
+    imgDiv.innerHTML = `<img src = "${img}" class="showIcon"/>`
+    nameDiv.innerHTML = `<p>${name}</p>`
+}
 
 
-
+if (mood.includes('great')) {
+    moodicon('https://i.imgur.com/hcer7On.png', 'Great')
+} 
+if (mood.includes('good')) {
+    moodicon('https://i.imgur.com/ZuN0AKm.png', 'Good')
+} 
+if (mood.includes('okay')) {
+    moodicon('https://i.imgur.com/mrfYPjJ.png', 'Okay')
+} 
+if (mood.includes('sad')) {
+    moodicon('https://i.imgur.com/mAzaux7.png', 'Sad')
+} 
+if (mood.includes('stressed')) {
+    moodicon('https://i.imgur.com/8naTwMh.png', 'Stressed')
+} 
+if (mood.includes('bad')) {
+    moodicon('https://i.imgur.com/VUDyyt8.png', 'Bad')
+} 
 
 
 
