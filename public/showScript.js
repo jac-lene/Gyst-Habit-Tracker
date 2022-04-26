@@ -10,9 +10,9 @@ function icon(img, name) {
     const imgDiv = document.createElement('div')
     const nameDiv = document.createElement('div')
     document.querySelector('.iconname').appendChild(imgDiv)
-    document.querySelector('.iconname').appendChild(nameDiv)
-    imgDiv.innerHTML = `<img src = "${img}" class="showIcon"/>`
-    nameDiv.innerHTML = `<p>${name}</p>`
+    imgDiv.innerHTML = `<img src = "${img}" class="showIcon"/><br>`
+    nameDiv.innerHTML = `<p class="name">${name}</p>`
+    imgDiv.appendChild(nameDiv)
 }
 
 
@@ -50,9 +50,9 @@ function moodicon(img, name) {
     const imgDiv = document.createElement('div')
     const nameDiv = document.createElement('div')
     document.querySelector('.iconmood').appendChild(imgDiv)
-    document.querySelector('.iconmood').appendChild(nameDiv)
     imgDiv.innerHTML = `<img src = "${img}" class="showIcon"/>`
-    nameDiv.innerHTML = `<p>${name}</p>`
+    nameDiv.innerHTML = `<p class="name">${name}</p>`
+    imgDiv.appendChild(nameDiv)
 }
 
 

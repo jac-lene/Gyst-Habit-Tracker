@@ -76,10 +76,7 @@ body {
     z-index: 999;
 }
 
-.icons {
-    height: 50px;
-    width: 50px;
-}
+
 
 
 /* .singleentry {
@@ -194,6 +191,10 @@ p {
     font-size: 12px;
 }
 
+p.name {
+    text-align: center;
+}
+
 .invisible {
     display: none;
 }
@@ -223,20 +224,22 @@ p {
 
 .actCont {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* gap: 10px; */
 }
 
 .detailCont {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* justify-content: center; */
 }
 
 .iconname, .iconmood {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 40px;
 }
 
 .showIcon {
@@ -244,6 +247,11 @@ p {
     width: 50px;
     margin: 0;
     /* align-items: center; */
+}
+
+.icons {
+    height: 50px;
+    width: 50px;
 }
 
 .checkDiv {
