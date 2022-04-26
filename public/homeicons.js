@@ -31,7 +31,7 @@ if (moodData !== null) {
     // console.log('full')
     const newdiv = document.createElement('div')
     document.querySelector('.moodIcon').appendChild(newdiv)
-    newdiv.innerHTML = '<img class="moodIcon icon" src="https://i.imgur.com/GyDyk3o.png" />'
+    newdiv.innerHTML = '<img class="moodIcon icon" src="https://i.imgur.com/MWiGByN.png" />'
 } else {
     // console.log('empty');
     document.querySelector('.moodIcon').innerHTML = null
