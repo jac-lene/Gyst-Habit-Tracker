@@ -7,12 +7,26 @@ const actArr = allActs.split(',')
 const activityMaster = ['social', 'yoga', 'meditation', 'rest', 'exercise', 'dance/play']
 
 function icon(img, name) {
+    // for (let i = 0; i <= 6; i++) {
+    //     const containerDiv = document.createElement('div')
+    //     containerDiv.classList.add(`containerDiv`)
+    //     const imgDiv = document.createElement('div')
+    //     const nameDiv = document.createElement('div')
+    //     document.querySelector('.iconname').appendChild(imgDiv)
+    //     imgDiv.innerHTML = `<img src = "${img}" class="showIcon"/><br>`
+    //     nameDiv.innerHTML = `<p class="name">${name}</p>`
+    //     imgDiv.appendChild(nameDiv)
+    // }
+
+    // const containerDiv = document.createElement('div')
+    // containerDiv.classList.add('containerDiv')
     const imgDiv = document.createElement('div')
     const nameDiv = document.createElement('div')
     document.querySelector('.iconname').appendChild(imgDiv)
     imgDiv.innerHTML = `<img src = "${img}" class="showIcon"/><br>`
     nameDiv.innerHTML = `<p class="name">${name}</p>`
     imgDiv.appendChild(nameDiv)
+    // document.querySelector('.containerDiv').appendChild(document.querySelector('.iconname'))
 }
 
 

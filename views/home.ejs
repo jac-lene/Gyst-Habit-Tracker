@@ -23,19 +23,11 @@
                     
                 </h3>
             </div>
-            <!-- <div class="iconContainer">
-                <div class="actIcon">
-                </div>
-                    <div class="moodIcon">
-                    </div>
-                    <div class="thoughtIcon">
-                    </div>
-        </div> -->
 
             <div class="entryIcons">
                 <div class="activity"> <%- entry.activity.name[0] ? `<img src="${entry.activity.image}" class="icon"/>` : ''  %></div>
                     <div class="mood">
-                        <%- entry.mood.name ? `<img src="${entry.mood.image}" class="icon"/>` : ''  %>
+                        <%- entry.mood.name ? `<img src="${entry.mood.image}" class="icon"/>` : '' %>
                     </div>
                     <div class="thoughts"> <%- entry.thoughts.content[0] ? `<img src="${entry.thoughts.image}" class="icon"/>` : ''  %></div>
             </div>

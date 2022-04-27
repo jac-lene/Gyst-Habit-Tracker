@@ -34,6 +34,12 @@ router.get('/profile/login', (req, res) => {
 //     }
 // });
 
+
+router.get('/profile/attributions', (req, res) => {
+    res.render('users/attributions')
+})
+
+
 router.get('/profile/sign-up', (req, res) => {
     res.render('users/signup')
 });
@@ -72,12 +78,14 @@ router.put("/profile/:id/edit", (req, res) => {
     );
 });
 
-router.get('profile/:id', (req, res) => {
+router.get('/profile/:id', (req, res) => {
     Users.findOne(
         { _id: req.params.id } )
         .then( (user) =>
             res.render('users/profile', { user: user })
         )
 })
+
+
 
 module.exports = router

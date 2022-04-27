@@ -73,6 +73,7 @@ body {
 .entryIcons {
     display: flex;
     justify-content: flex-end;
+    gap: 6px;
 }
 
 .icon {
@@ -123,7 +124,7 @@ body {
 textarea {
     resize: none;
     font-family: 'Prata', serif;
-    font-size: 10px;
+    font-size: 14px;
     height: 100px;
     width: 340px;
 }
@@ -236,16 +237,25 @@ p.name {
 }
 
 .detailCont {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     /* justify-content: center; */
+    
 }
 
-.iconname, .iconmood {
+.iconname {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 40px;
+    gap: 70px;
+    row-gap: 20px;
+    padding: 20px;
+}
+
+.iconmood {
+    gap: 70px;
+    row-gap: 20px;
+    padding: 20px;
 }
 
 .showIcon {
@@ -262,10 +272,12 @@ p.name {
 }
 
 .checkDiv {
-    /* display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: left; */
     display: inline-block;
     text-align: center;
+}
+
+.attCard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
