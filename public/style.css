@@ -279,5 +279,12 @@ p.name {
 .attCard {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
+}
+
+.att {
+    font-family: 'Prata', serif;
+    font-size: 18px;
+    width: 180px;
 }
