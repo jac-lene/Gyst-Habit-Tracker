@@ -70,10 +70,16 @@ body {
     gap: 6px;
 }
 
+.entryIcons {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .icon {
     height: 40px;
     width: 40px;
     z-index: 999;
+    /* display: none; */
 }
 
 
@@ -246,6 +252,7 @@ p.name {
     height: 50px;
     width: 50px;
     margin: 0;
+
     /* align-items: center; */
 }
 
