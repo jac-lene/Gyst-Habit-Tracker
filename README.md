@@ -1,6 +1,6 @@
 # Gyst-Habit-Tracker
 
-Link to app: 
+Link to app: https://project-2-gyst.herokuapp.com/
 
 ## Images
 
@@ -24,6 +24,7 @@ Gyst is an app created to do one thing simply, beautifully, and intuitively: tra
 
 ## Using the GYST app
 
+Using the app is easy. Just press the + button at the bottom of the screen to add a new entry. You can input your daily activities, choose a mood you're in, and write a journal entry. When you're done, click the checkmark at the top of the page to add your entry to your daily tracker. Click on any entry on the homepage to see a detailed view of your habits that day, and from there you can either click on the trashcan icon at the bottom to delete, or click the pencil in the top right to edit. 
 
 
 ## Wireframes
@@ -33,4 +34,8 @@ Gyst is an app created to do one thing simply, beautifully, and intuitively: tra
 
 ## Teachable Moments
 
+A major breakthrough I had while working on this project was learning how to work with the looping data to create dynamic changes within the code. I added conditionals that read whether or not there were entries in specific categories, and used that to push a special icon to the homepage to denote an entry in that category in a visual way. Knowing that you can enable code to run only if there is information in certain areas of the database is really exciting and cool, and opens up a ton of new possibilities. 
+
 ## Sign Off
+
+Thanks so much for checking out my habit tracker app. I hope you enjoy using it and find the design intuitive and appealing!
